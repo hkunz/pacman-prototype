@@ -1,0 +1,2 @@
+mxmlc -default-size 448 576 src/bigpoint/games/PacMan.as -output deploy/PacMan.swf -strict -source-path src -source-path ../../lib -library-path+=bin
+compc -source-path sym_src -source-path ../../lib/ -output bin/source.swc -include-classes packages.Compilation

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" />
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Project</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<style type="text/css">
+	#flashContent{
+		margin-left: auto;
+		margin-right: auto;
+		width: 448px;
+		height: 576px;
+	}
+
+	*{
+		margin: 10px;
+		padding: 0;
+	}
+
+	html, body { 
+		height:100%;
+		width:100%;
+	}
+</style>
+</head>
+
+<body bgcolor="#FFFBE6">
+	<div id="flashContent">content here</div>
+	<script type="text/javascript">
+		// <![CDATA[
+		var so = new SWFObject("ContentLoader.swf?url=PacMan.swf&pWidth=350&pHeight=18", "theMovie", "405", "530", "8");
+		//var so = new SWFObject("CameraCapture.swf", "theMovie", "448", "576", "8");
+		so.addParam("allowScriptAccess", "always");
+		so.addParam("wmode", "transparent", "middle");
+		so.write("flashContent");
+		// ]]>
+	</script>
+</body>
+</html>
